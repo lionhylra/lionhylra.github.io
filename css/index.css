@@ -1,13 +1,13 @@
 
-@media only screen and (max-width: 1500px){
-	#postBar{
-		background-image: none;
-	}
-}
-
 #postBar{
 	background-image: url("../img/Avatar.png");
 	background-position: right;
 	background-repeat: no-repeat;
 	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1500px){
+	#postBar{
+		background-image: none;
+	}
 }
