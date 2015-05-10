@@ -1,3 +1,10 @@
+
+@media screen and (max-width: 500px){
+	#postBar{
+		background-image: none;
+	}
+}
+
 #postBar{
 	background-image: url("../img/Avatar.png");
 	background-position: right;
