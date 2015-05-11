@@ -10,9 +10,9 @@ div.container div.navbar a.navbar-brand{
 	font-family: Papyrus, fantacy;
 	font-size: 26px;
 }
-div.container div.navbar a.navbar-brand span{
+/*div.container div.navbar a.navbar-brand span{
 	vertical-align: sub;
-}
+}*/
 
 div.container div.navbar a.navbar-brand:hover{
 	color:#228DFF;
