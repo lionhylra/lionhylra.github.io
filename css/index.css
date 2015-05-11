@@ -10,6 +10,7 @@ a.navbar-brand{
 	font-family: Papyrus, fantacy;
 	font-size: 26px;
   	color:#228DFF;
+  	vertical-align: sub;
 }
 
 @media only screen and (max-width: 500px){
