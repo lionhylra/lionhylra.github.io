@@ -6,11 +6,11 @@
 	margin-bottom: 0;
 }
 
-a.navbar-brand{
+div.navbar a.navbar-brand{
 	font-family: Papyrus, fantacy;
 	font-size: 26px;
   	color:#228DFF;
-  	vertical-align: sub;
+  	padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 500px){
