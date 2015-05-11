@@ -6,11 +6,13 @@
 	margin-bottom: 0;
 }
 
-div.navbar a.navbar-brand{
+div.container div.navbar a.navbar-brand{
 	font-family: Papyrus, fantacy;
 	font-size: 26px;
-  	color:#228DFF;
-  	padding-bottom: 10px;
+}
+
+div.container div.navbar a.navbar-brand:hover{
+	color:#228DFF;
 }
 
 @media only screen and (max-width: 500px){
