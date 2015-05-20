@@ -1,0 +1,51 @@
+div.waterfall_container div.thumbnail{
+	width:19%;
+	padding:0;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.grid-sizer{
+	width: 19%;
+}
+.gutter-sizer{
+	width: 1.25%;
+}
+
+@media screen and (min-width: 1px) and (max-width: 500px){
+    div.waterfall_container div.thumbnail{
+		width:100%;
+	}
+	div.waterfall_container div.gutter-sizer{
+		width: 0;
+	}
+
+}
+@media screen and (min-width: 501px) and (max-width: 700px){
+	div.waterfall_container div.thumbnail{
+		width:49%;
+	}
+	div.waterfall_container div.gutter-sizer{
+		width: 2%;
+	}
+}
+@media screen and (min-width:701px) and (max-width: 991px){
+	div.waterfall_container div.thumbnail{
+		/*width:24.25%;*/
+		width: 32%;
+	}
+	div.waterfall_container div.gutter-sizer{
+		width: 2%;
+	}
+}
+@media screen and (min-width:992px) and (max-width: 9999px){
+    div.waterfall_container div.thumbnail{
+		/*width:19%;*/
+		width: 24.25%;
+	}
+	div.waterfall_container div.gutter-sizer{
+		/*width: 1.25%;*/
+		width: 1%;
+	}
+}
