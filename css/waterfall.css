@@ -17,6 +17,10 @@ div.waterfall_container div.thumbnail{
     div.waterfall_container div.thumbnail{
 		width:100%;
 	}
+	.grid-sizer{
+		width: 100%;
+	}
+
 	div.waterfall_container div.gutter-sizer{
 		width: 0;
 	}
@@ -26,6 +30,10 @@ div.waterfall_container div.thumbnail{
 	div.waterfall_container div.thumbnail{
 		width:49%;
 	}
+	.grid-sizer{
+		width: 49%;
+	}
+
 	div.waterfall_container div.gutter-sizer{
 		width: 2%;
 	}
@@ -35,6 +43,10 @@ div.waterfall_container div.thumbnail{
 		/*width:24.25%;*/
 		width: 32%;
 	}
+	.grid-sizer{
+		width: 32%;
+	}
+
 	div.waterfall_container div.gutter-sizer{
 		width: 2%;
 	}
@@ -44,6 +56,10 @@ div.waterfall_container div.thumbnail{
 		/*width:19%;*/
 		width: 24.25%;
 	}
+	.grid-sizer{
+		width: 24.25%;
+	}
+
 	div.waterfall_container div.gutter-sizer{
 		/*width: 1.25%;*/
 		width: 1%;

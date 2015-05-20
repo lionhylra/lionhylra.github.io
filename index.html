@@ -218,12 +218,15 @@
     <script>
       $(function(){
         $('.waterfall_container').masonry({
-          // columnWidth:'.grid-sizer',
+          columnWidth:'.grid-sizer',
           itemSelector:'.thumbnail',
           percentPosition: true,
           gutter: '.gutter-sizer'
         });
         $('.waterfall_container').masonry('bindResize');
+        $(window).resize(function(){
+          $('.waterfall_container').masonry();
+        });
       });
     </script>
 </body></html>
