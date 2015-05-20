@@ -1,0 +1,68 @@
+@media screen and (min-width: 1px) and (max-width: 500px){
+    #grid[data-columns]::before {
+        content: '1 .column.col-xs-12';
+    }
+    div#grid .column:last-child{
+	padding-left: 0;
+	padding-right: 0; 
+	} 
+}
+@media screen and (min-width: 501px) and (max-width: 700px){
+    #grid[data-columns]::before {
+        content: '2 .column.col-xs-6';
+    }
+    div#grid .column:first-child{
+		padding-left: 0;
+		padding-right: 5px;  
+	}
+	div#grid .column:last-child{
+		padding-right: 0;
+		padding-left: 5px;
+	}
+}
+@media screen and (min-width:701px) and (max-width: 991px){
+    #grid[data-columns]::before {
+        content: '3 .column.col-xs-4';
+    }
+    div#grid .column:first-child{
+		padding-left: 0;
+		padding-right: 10px;  
+	}
+
+	div#grid .column:last-child{
+		padding-right: 0;
+		padding-left: 10px;
+	}
+
+	div#grid .column:not(:last-child):not(:first-child){
+		padding-left: 5px;
+		padding-right: 5px; 
+	}
+}
+@media screen and (min-width:992px) and (max-width: 9999px){
+    #grid[data-columns]::before {
+        content: '4 .column.col-md-3';
+    }
+    div#grid .column:first-child{
+		padding-left: 0;
+		padding-right: 12px;
+    }
+    div#grid .column:nth-child(2){
+		padding-left: 4px;
+		padding-right: 8px;
+    }
+    div#grid .column:nth-child(3){
+		padding-left: 8px;
+		padding-right: 4px;
+    }
+    div#grid .column:last-child{
+		padding-left: 12px;
+		padding-right: 0;
+    }
+}
+
+div#grid .thumbnail{
+	padding:0;
+	overflow: hidden;
+	border-radius: 5px;
+}
