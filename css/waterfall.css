@@ -89,3 +89,9 @@ div.waterfall_container div.thumbnail.post .overlay span{
 		width: 1%;
 	}
 }
+@media screen and (max-width: 991px){
+	div.waterfall_container div.thumbnail.post p::after{
+		content:" Read more";
+		color: gray;
+	}
+}
