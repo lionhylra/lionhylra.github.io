@@ -18,6 +18,11 @@ div.container div.navbar a.navbar-brand:hover{
 	color:#228DFF;
 }
 
+div#canvasloader-container #canvasLoader{
+	text-align: center;
+}
+
+
 @media only screen and (max-width: 500px){
 	#postBar{
 		background-image: none;

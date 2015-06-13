@@ -24,7 +24,7 @@ div.waterfall_container div.thumbnail.post p{
 }
 
 div.waterfall_container div.thumbnail.post div.overlay{
-	background-color: rgba(0,0,0,0.85);
+	background-color: rgba(0,0,0,0.65);
 	color: white;
 	position: absolute;
 	left: 0;
@@ -34,7 +34,8 @@ div.waterfall_container div.thumbnail.post div.overlay{
 	line-height: 100%;
 	font-weight: bold;
 	font-size: large;
-	display: none;
+	/*display: none;*/
+	opacity: 0;
 }
 
 div.waterfall_container div.thumbnail.post .overlay span{
