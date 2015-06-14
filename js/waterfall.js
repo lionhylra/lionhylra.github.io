@@ -1,3 +1,4 @@
+
 $(function(){
 	var isMobile = false; //initiate as false
 	// device detection
@@ -12,13 +13,26 @@ $(function(){
 		// });
 
 		$('.waterfall_container').on('mouseenter','div.post',function(){
-			// alert($(this).attr('class'));
-			// $(this).find('.overlay').stop().fadeIn(400);	
+			// var randomColor = Math.floor(Math.random()*16777215).toString(16);
+			// var date = new Date();
+			// var second = date.getSeconds();
+			// var millisecond = date.getMilliseconds();
+			// var minute = ((millisecond+1)/1000+(second+1))/60;//[0-1] 
+			/* get random color */
+			var min = 50;
+			var r = (Math.floor((256-min)*Math.random()) + min+1);
+			var g = (Math.floor((256-min)*Math.random()) + min+1);
+			var b = (Math.floor((256-min)*Math.random()) + min+1);
+			var hue = 'rgba(' + r + ',' + g + ',' + b + ',.75)';
+			if (isDarkColor(r,g,b)) {
+				$(this).find('.overlay').css({'color':'white','textShadow':'black 2px 2px 2px'});	
+			}else{
+				$(this).find('.overlay').css({'color':'black','textShadow':'#ffffbe 2px 2px 4px'});
+			};
+			$(this).find('.overlay').css('background-color',hue);
 			$(this).find('.overlay').stop().animate({opacity:1},200);	
 		});
 		$('.waterfall_container').on('mouseleave','div.post',function(){
-			// $(this).find('.overlay').stop().fadeOut(400);	
-			// alert("mouseout");
 			$(this).find('.overlay').animate({opacity:0},600);	
 		});
 	}
@@ -41,3 +55,16 @@ $(function(){
         });
 
 });
+var isDarkColor = function(red, green, blue) {
+  var brightness;
+  brightness = (red * 299) + (green * 587) + (blue * 114);
+  brightness = brightness / 255000;
+
+  // values range from 0 to 1
+  // anything greater than 0.5 should be bright enough for dark text
+  if (brightness >= 0.5) {
+    return false;
+  } else {
+    return true;
+  }
+}
