@@ -14,9 +14,9 @@ div.container div.navbar a.navbar-brand{
 	vertical-align: sub;
 }*/
 
-div.container div.navbar a.navbar-brand:hover{
+/*div.container div.navbar a.navbar-brand:hover{
 	color:#228DFF;
-}
+}*/
 
 div#canvasloader-container #canvasLoader{
 	text-align: center;
