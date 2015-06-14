@@ -16,8 +16,9 @@ $(function(){
 			// $(this).find('.overlay').stop().fadeIn(400);	
 			$(this).find('.overlay').stop().animate({opacity:1},200);	
 		});
-		$('.waterfall_container').on('mouseout','div.post',function(){
+		$('.waterfall_container').on('mouseleave','div.post',function(){
 			// $(this).find('.overlay').stop().fadeOut(400);	
+			// alert("mouseout");
 			$(this).find('.overlay').animate({opacity:0},600);	
 		});
 	}

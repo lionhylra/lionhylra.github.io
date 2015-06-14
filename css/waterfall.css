@@ -16,11 +16,15 @@ div.waterfall_container div.thumbnail.post{
 	/*background-color: black;*/
 	/*color: white;*/
 	text-align: center;
-	padding-left: 10px;
-	padding-right: 10px;
 }
 div.waterfall_container div.thumbnail.post p{
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: left;
+}
+div.waterfall_container div.thumbnail.post h4{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 div.waterfall_container div.thumbnail.post div.overlay{
