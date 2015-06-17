@@ -84,7 +84,7 @@
 			var $this = $(this);
 			if ($this.css('position') == 'fixed') return;
 			if ($this.hasClass($this.attr('class') + 'copy')) return;
-			var originalProperties = $this.css(['position', 'top', 'left', 'height', 'width', 'float', ]);
+			var originalProperties = $this.css(['position', 'top', 'left', 'width', 'float', ]);
 			var topOnWindow = getTop($this); //this must be done after the window is loaded
 			var $clone = $this.clone()
 				.addClass($this.attr('class') + 'copy')
