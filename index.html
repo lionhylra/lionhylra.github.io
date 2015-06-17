@@ -127,6 +127,7 @@
     <script src="./js/waterfall.js"></script>
     <script src="./js/wordPress.js"></script>
     <script src="./js/jquery.shining.min.js"></script>
+    <script src="./js/stickToWindowTop.js"></script>
     <script>
         $(function(){
           $('div.container div.navbar a.navbar-brand').on('mouseenter',function(){
@@ -134,6 +135,9 @@
                 speed:50
               });
           });
+        });
+        $(window).load(function(){
+          $('div.navbar').stickToWindowTop();
         });
     </script>
 </body></html>

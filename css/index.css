@@ -6,6 +6,10 @@
 	margin-bottom: 0;
 }
 
+div.container div.navbar{
+	z-index: 999;
+}
+
 div.container div.navbar a.navbar-brand{
 	font-family: Papyrus, fantacy;
 	font-size: 26px;
