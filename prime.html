@@ -46,7 +46,7 @@
             <br>
             <br>
             <label for="result">结果:</label>
-            <input id="result" type="text" name="result">
+            <input id="result" type="text" name="result" disabled>
         </form>
     </div>
     
@@ -59,9 +59,9 @@
         $('#button').on('click',function(){
             var num = $('#number').val();
             if(isPrime(num)){
-                $('#result').val('是');
+                $('#result').val('是质数');
             }else{
-                $('#result').val('不是');
+                $('#result').val('不是质数');
             }   
         });
     });
