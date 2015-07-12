@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta charset="UTF-8">
+        <style type="text/css">
+        html, body {
+            /*This is important!*/
+            text-align: center;
+            }
+
+            p {text-align: left;}
+
+            body {
+                margin: 0;
+                padding: 0;
+                background: #697281;
+                text-align: left;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                color: #F1F5F8;
+                background-color:#2A2A2A;
+            }
+
+            *{
+            /*This is important!*/
+              margin: 0 auto 0 auto;
+             text-align:center;
+            }
+
+
+        </style>
+        <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
+            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body>
+    <div>
+        <form action="">
+            <label for="number">填入一个质数:</label>
+            <input id="number" type="text" name="number">
+            <input id="button" type="button" value="判断">
+            <br>
+            <br>
+            <label for="result">结果:</label>
+            <input id="result" type="text" name="result">
+        </form>
+    </div>
+    
+    </body>
+</html>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/isPrime.js" type="text/javascript"></script>
+<script>
+    $(function(){
+        $('#button').on('click',function(){
+            var num = $('#number').val();
+            if(isPrime(num)){
+                $('#result').val('是');
+            }else{
+                $('#result').val('不是');
+            }   
+        });
+    });
+</script>
