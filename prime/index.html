@@ -9,6 +9,7 @@
         html, body {
             /*This is important!*/
             text-align: center;
+            height: 100%;
             }
 
             p {text-align: left;}
@@ -16,38 +17,103 @@
             body {
                 margin: 0;
                 padding: 0;
-                background: #697281;
+                /*background: #697281;*/
                 text-align: left;
                 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
                 font-size: 13px;
                 color: #F1F5F8;
-                background-color:#2A2A2A;
+                background-color:#4F4F4F;
             }
 
             *{
             /*This is important!*/
-              margin: 0 auto 0 auto;
+              /*margin: 0 auto 0 auto;*/
              text-align:center;
             }
+            
+            div.content{
+                position: relative;
+                top:50%;
+            }
 
+            div.content form{
+                text-align: left;
+                display: inline-block;
+                position: relative;
+            }
+
+            div.content div.wrapper{
+                position: relative;
+                display: inline-block;
+                top:-300px;
+                left: 100px;
+            }
 
         </style>
+        <link rel="stylesheet" href="drawLittleHuang.css">
         <!-- IE6-8 support of HTML5 elements --> <!--[if lt IE 9]>
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         
     </head>
     <body>
-    <div>
+    <div class="content">
         <form action="">
             <label for="number">填入一个自然数:</label>
             <input id="number" type="text" name="number">
-            <input id="button" type="button" value="判断">
+            <input id="button" type="button" value="判断是否素数">
             <br>
             <br>
             <label for="result">结果:</label>
             <input id="result" type="text" name="result" disabled>
         </form>
+
+        <div class="wrapper"><!-- 容器 -->
+            <div class="littleH"><!-- 小黄人 -->
+            <div class="bodyH"><!-- 身体 -->
+                <div class="trousers"><!-- 裤子 -->
+                    <div class="condoleBelt"><!-- 吊带 -->
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+                    <div class="trousers_top"></div><!-- 裤子突出的矩形部分 -->
+                    <div class="pocket"></div><!-- 裤袋 -->
+                    <!-- 三条线 -->
+                    <span class="line_left"></span>
+                    <span class="line_right"></span>
+                    <span class="line_bottom"></span>
+                </div>
+            </div>
+            <div class="hair"><!-- 头发 -->
+                <span class="left_hair_one"></span>
+                <span class="left_hair_two"></span>
+            </div>
+            <div class="eyes"><!-- 眼睛 -->
+                <div class="leftEye"><!-- 左眼 -->
+                    <div class="left_blackEye">
+                        <div class="left_white"></div>
+                    </div>
+                </div>
+                <div class="rightEye"><!-- 右眼 -->
+                    <div class="right_blackEye">
+                        <div class="right_white"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mouse"><!-- 嘴巴 -->
+                <div class="mouse_shape"></div>
+            </div>
+            <div class="hands"><!-- 双手 -->
+                <div class="leftHand"></div>
+                <div class="rightHand"></div>
+            </div>
+            <div class="feet"><!-- 双脚 -->
+                <div class="left_foot"></div>
+                <div class="right_foot"></div>
+            </div>
+            <div class="groundShadow"></div><!-- 脚底阴影 -->
+            </div>
+        </div>
     </div>
     
     </body>
