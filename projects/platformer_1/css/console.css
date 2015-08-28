@@ -1,0 +1,310 @@
+/*
+Global Setting
+ */
+
+
+/*This is important!*/
+html, body {
+text-align: center;
+}
+
+p {text-align: left;}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 13px;
+	/*background-color: #E5E3E7;*/
+	background-color: #F5F5F5;
+}
+
+/*This is important!*/
+* {
+	margin: 0 auto 0 auto;
+	text-align:left;
+}
+
+a{
+	color: white;
+}
+
+.Container{
+}
+.clear{
+	clear: both;
+}
+
+#NavBar{
+	background-color: #4b5f9c;
+	position: fixed;
+	_position:absolute; /* for IE6 */
+	_top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); /* for IE6 */
+	left:0px;
+	top:0px;
+	width: 100%;
+	height: 140px;
+	padding:0;
+	margin:0;
+	/*filter:alpha(Opacity=90);-moz-opacity:0.7;opacity: 0.9;*/
+	z-index: 5;
+	box-shadow: 0px 1px 2px #000;
+	overflow: visible;
+}
+
+#NavBar #upperPanel{
+	border-bottom: 1px solid #92978A;
+	overflow: hidden;
+}
+
+	#NavBar #upperPanel .subContainer{
+		margin-top: 13px;
+		margin-bottom: 13px;
+		display: inline-block;
+	}
+
+	#NavBar #upperPanel #LogoContainer{
+		margin-left: 30px;
+	}
+
+
+	#NavBar #upperPanel #ToolContainer{
+		float:right;
+		margin-right: 30px;
+		min-width: 500px;
+	}
+
+		#NavBar #upperPanel #ToolContainer a{
+			color: #fff;
+			font-weight: bold;
+			line-height: 40px;
+			font-size: 16px;
+			margin: 0 10px;
+			padding-bottom: 6px; 
+		}
+
+		#NavBar #upperPanel #ToolContainer a.selected{
+				border-bottom: 5px solid #D6EDD1;
+		}
+
+
+			#NavBar #ToolContainer a:link{
+				text-decoration: none;
+			}
+			#NavBar #ToolContainer a:visited{
+				text-decoration: none;
+			}
+			#NavBar #ToolContainer a:hover{
+				text-decoration: none;
+				border-bottom: 5px solid #D6EDD1;
+			}
+			#NavBar #ToolContainer a:active{
+				text-decoration: none;
+			}
+
+/*#NavBar #ToolContainer a::after{
+}
+*/
+#NavBar #lowerPanel{
+	height: 50%;
+	max-height: 50%;
+	text-align: left;
+	min-width: 650px;
+	min-height: 50%;
+}
+
+#NavBar #lowerPanel #SideNav{
+	display: inline-block;
+	margin: 0; 
+	background-color: #4b5f9c;
+	width: 280px;
+	min-height: 100%;
+	overflow: scroll;
+	float: left;
+}
+
+	#NavBar #lowerPanel #SideNav #WrappedNav{
+		font-size: 18px;
+		text-align: center;
+		color: #fff !important;
+		height: 70px;
+		line-height: 70px;
+	}
+		#NavBar #lowerPanel #SideNav #WrappedNav img#avatar{
+			height: 50px;
+			vertical-align: middle;
+		}
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnOpen,
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnClose{
+			font-size: 30px;
+		}
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnOpen:hover,
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnClose:hover{
+			color: #B4FFEF;
+		}
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnOpen{
+			/*vertical-align: middle;*/
+		}
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnClose::after{
+			content:"\FE3D"
+		}
+		#NavBar #lowerPanel #SideNav #WrappedNav .WrapBtnOpen::after{
+			content:"\FE3E"
+		}
+
+		#NavBar #lowerPanel #SideNav a:link{
+			text-decoration: none;
+		}
+		#NavBar #lowerPanel #SideNav a:visired{
+			text-decoration: none;
+		}
+
+		#NavBar #lowerPanel #SideNav a:hover{
+			text-decoration: none;
+		}
+		#NavBar #lowerPanel #SideNav a:active{
+			text-decoration: none;
+		}
+
+		#NavBar #lowerPanel #SideNav #Menu{
+			padding: 0;
+			margin: 0;
+			
+		}
+
+		#NavBar #lowerPanel #SideNav #Menu ul{
+			padding-left: 0;
+		}
+		#NavBar #lowerPanel #SideNav #Menu li{
+			list-style-type:none;
+			color: #fff; 
+			border-top: 1px solid #92978A;
+			padding-left: 50px; 
+			cursor: pointer;
+		}
+		#NavBar #lowerPanel #SideNav #Menu li.MenuItem{
+			padding-left:60px; 
+			/*font-weight: lighter;*/
+			height: 35px;
+			line-height: 35px;
+			font-size: 14px;
+		}
+		#NavBar #lowerPanel #SideNav #Menu li.MenuCaption{
+			font-size: 18px;
+			height: 50px;
+			line-height: 50px;
+			padding-left: 50px;
+			font-weight: bolder;
+
+		}
+		#NavBar #lowerPanel #SideNav #Menu li a{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+		}
+		#NavBar #lowerPanel #SideNav #Menu li.MenuItem:hover{
+			/*background-color: #5064C7;*/
+			background: -webkit-linear-gradient(rgba(159,186,255,1), rgba(159,186,255,0)); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(rgba(159,186,255,1), rgba(159,186,255,0)); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(rgba(159,186,255,1), rgba(159,186,255,0)); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(rgba(159,186,255,1), rgba(159,186,255,0)); /* Standard syntax */
+		}
+		#NavBar #lowerPanel #SideNav #Menu li.MenuItem:hover a{
+			color: #B4FFEF;
+		}
+		#NavBar #lowerPanel #SideNav #Menu li:last-child{
+			border-bottom: 1px solid #92978A;
+		}
+		#NavBar #lowerPanel #SideNav #Menu li.selectedlist{
+			background-color: #9FBAFF;
+		}
+
+
+#NavBar #lowerPanel #SearchBar{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	background-color: #4b5f9c;
+	border-left: 1px solid #92978A;
+	height: 100%;
+	width: hidden;
+	overflow: auto;
+	vertical-align: top;
+	min-width: 360px;
+	min-height: 100%;
+}
+	#NavBar #lowerPanel #SearchBar #Billing{
+		display: inline-block;
+	}
+	#NavBar #lowerPanel #SearchBar #Billing div{
+		display: inline-block;
+		line-height: 70px;
+		color: #fff;
+		font-size: 16px;
+	}
+		#NavBar #lowerPanel #SearchBar #Billing div:first-child{
+			margin-left:40px;
+		}
+		#NavBar #lowerPanel #SearchBar #Billing div.value{
+			margin-left: 10px;
+		}
+			#NavBar #lowerPanel #SearchBar #Billing div.value em{
+				color: yellow;
+			}
+	#NavBar #lowerPanel #SearchBar #SearchWrap{
+		float: right;
+		margin-right: 40px;
+		margin-top: 15px;
+		background-color: #d5d5d5;
+	}
+/*
+	.f-search::after{
+		content:"\1F50D";
+	}*/
+
+		#NavBar #lowerPanel #SearchBar #SearchWrap input#Search{
+			width:225px;
+			height: 24px;
+			padding: 4px 5px;
+			font-size: 16px;
+			font-weight: 400;
+			color: #595C53;
+			outline: none;
+			border: 2px solid #d5d5d5;
+		}
+
+		#NavBar #lowerPanel #SearchBar #SearchWrap input#Search:focus{
+			box-shadow: 0 0 4px #fff;
+			border: 2px solid #B4FFEF;
+		}
+
+
+		#NavBar #lowerPanel #SearchBar #SearchWrap button#SearchBtn{
+			cursor: pointer;
+			width: 35px;
+			height: 36px;
+			vertical-align: top;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			background-color: #d5d5d5;
+			font-size: 16px;
+			border: 0;
+		}
+
+		#NavBar #lowerPanel #SearchBar #SearchWrap button#SearchBtn img{
+			height: 70%;
+			width: 70%;
+		}
+
+body{
+	padding-top: 140px;
+	/*padding-left: 280px*/
+}
+
+#canvasLoader{
+	margin: 30px auto;
+	text-align: center;
+
+}

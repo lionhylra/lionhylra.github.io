@@ -1,0 +1,40 @@
+#Marketplace{
+	padding:30px;
+}
+
+	#Marketplace #appList{
+		overflow-y:scroll;
+		overflow-x:hidden; 
+		min-width: 456px; 
+	}
+	#Marketplace #appList::after{
+		content: "";
+		clear: both;
+	}
+
+		#Marketplace #appList .appWrap{
+			float: left;
+			padding: 20px;
+			text-align: center;
+			border-radius: 5px;
+			-moz-border-radius:5px;
+			margin-left: 10px;
+		}
+		#Marketplace #appList .appWrap:hover{
+			background-color: white;
+		}
+			#Marketplace #appList .appWrap img{
+				display: block;
+			}
+			#Marketplace #appList .appWrap a.appName{
+				display: block;
+				text-align: center;
+				color: #000;
+				text-decoration: none;
+			}
+			#Marketplace #appList .appWrap span.appProvider{
+				display: block;
+				text-align: center;
+				font-size: 12px;
+				color: #6d6c6b;
+			}

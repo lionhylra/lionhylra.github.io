@@ -1,0 +1,94 @@
+
+#Dashboard{
+	overflow-y:scroll; 
+	/*left: 280px;*/
+	/*top: 60px;*/
+	z-index: 2;
+	background-color: #F5F5F5;
+	/*background-color: #fff;*/
+	width: 100%;
+}
+	#Dashboard div.addNew{
+		cursor: pointer;
+		margin: 30px 0 0;
+		text-align: center;
+		font-size: 16px;
+		line-height: 60px;
+		font-weight: 700;
+		border: 20px solid #F5F5F5;
+		background-color: #E7E6E5;
+	}
+		#Dashboard div.addNew:hover{
+			color: blue;
+			background-color: rgba(231, 230, 229,1);
+		}
+	
+	#Dashboard #tableContainer{
+		border: 20px solid  #F5F5F5;
+	}
+	#Dashboard table#itemList{
+		font-size: 16px;
+		line-height: 60px;
+		text-align: center;
+		width: 100%;
+		border-spacing: 0;
+		border-collapse: collapse;
+		min-width: 377px;
+		overflow: scroll;
+	}
+
+		#Dashboard table#itemList tr{
+			border:1px solid #F5F5F5;
+			border-bottom: 0;
+		}
+
+		#Dashboard table#itemList tr:last-child{
+			border-bottom: 1px solid #F5F5F5;
+		}
+
+		#Dashboard table#itemList tr.thead{
+			background-color: #E7E6E5;
+		}
+		#Dashboard table#itemList tr.itemData{
+			cursor: pointer;
+		}
+		#Dashboard table#itemList tr.singular{
+			background-color: #F0F0F0;
+		}
+		#Dashboard table#itemList tr.itemData:hover{
+			border-color:#4b5f9c;
+			border-bottom:1px solid #4b5f9c;
+		}
+			#Dashboard table#itemList th{
+				text-align: center;
+			}
+
+			#Dashboard table#itemList th.service{
+				width: 10%;
+			}
+			#Dashboard table#itemList th.status{
+				width: 40%;
+			}
+			#Dashboard table#itemList th.name{
+			}
+			#Dashboard table#itemList th.action{
+			}
+
+		#Dashboard table#itemList td{
+			text-align: center;
+		}
+		#Dashboard table#itemList td img{
+			vertical-align: middle;
+			height: 70%;
+		}
+		#Dashboard table#itemList td button{
+			background: transparent;
+			border:0;
+			cursor: pointer;
+		}
+		#Dashboard table#itemList td button:hover img{
+			box-shadow: 0 0 5px green;
+		}
+		#Dashboard table#itemList td button img{
+			height: 20px;
+		}
