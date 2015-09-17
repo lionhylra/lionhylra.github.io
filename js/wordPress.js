@@ -38,6 +38,12 @@ function success(data, textStatus, jqXHR){
 		$('.waterfall_container').append($div).masonry('appended',$div);
 
 	});
+
+	$('.waterfall_container').imagesLoaded()
+	.always(function(instance){
+      $('.waterfall_container').masonry('layout');
+    });
+
 }
 $(function(){
 	var cl = new CanvasLoader('canvasloader-container');

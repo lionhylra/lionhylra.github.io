@@ -43,12 +43,12 @@ $(function(){
           itemSelector:'.thumbnail',
           percentPosition: true,
           gutter: '.gutter-sizer',
-          stamp:'.stamp'
+          stamp:'.stamp',
+          // transitionDuration: '0.2s'
+          transitionDuration: 0
         });
 
-        $grid.imagesLoaded().progress(function(){
-          $grid.masonry('layout');
-        });
+		
         $grid.masonry('bindResize');
         $(window).resize(function(){
           $grid.masonry('layout');
