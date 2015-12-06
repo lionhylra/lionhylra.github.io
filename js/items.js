@@ -1,6 +1,6 @@
-function addItemToProjectsMenu(url, title){
+function addItemToIOSProjectsMenu(url, title){
 	var li = $('<li/>').append($('<a/>',{href:url,target:"_blank", text:title}));
-	$('#apps_menu').before(li);
+	$('#projects_menu').nextAll('.dropdown-header:first').before(li);
 }
 function addItemToWaterfall(url,thumbnail_url,thumbnail_alt, title, date, content){
 	/*
@@ -62,7 +62,9 @@ function github_success(data, textStatus, jqXHR){
 		}
 		var date = new Date(element.updated_at).toLocaleDateString();
 		addItemToWaterfall(element.html_url, null, null, "[Project] "+element.name, date, element.description);
-		addItemToProjectsMenu(element.html_url, element.name);
+		if(element.language == "Swift" || element.language == "Objective-C"){
+			addItemToIOSProjectsMenu(element.html_url, element.name);
+		}
 	});
 	var wordpress_url = "https://public-api.wordpress.com/rest/v1.1/sites/lionhylra.wordpress.com/posts/?number=10";
 	$.getJSON(wordpress_url,wordpress_success);
